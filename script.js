@@ -1,13 +1,16 @@
 // complete the given function
 
 function palindrome(str){
+	let s="";
 	while (str.includes(" ")) {
-		str.replace(" ","");
+	s=	str.replace(" ","");
 	}
-let n=str.length;
+
+let n=s.length;
+	s.toLowerCase();
 	let f = true;
 	for (let i = 0; i < n; i++) {
-		if (str.charAt(i)!==str.charAt(n-i-1)) {
+		if (s.charAt(i)!==s.charAt(n-i-1)) {
 			return  false;
 		}
 	}
