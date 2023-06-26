@@ -7,9 +7,9 @@ function palindrome(str){
 let n=str.length;
 	for (let i = 0; i < n; i++) {
 		if (str.charAt(i)!=str.charAt(n-i-1)) {
-			return { message:false};
+			return  false;
 		}
 	}
-	return { message:true};
+	return true;
 }
 module.exports = palindrome
