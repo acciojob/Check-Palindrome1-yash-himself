@@ -11,9 +11,10 @@ let n=s.length;
 	let f = true;
 	for (let i = 0; i < n; i++) {
 		if (s.charAt(i)!==s.charAt(n-i-1)) {
-			return  false;
+			f=  false;
+			break;
 		}
 	}
-	return true;
+	return f;
 }
 module.exports = palindrome
