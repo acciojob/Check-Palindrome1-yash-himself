@@ -1,10 +1,8 @@
 // complete the given function
 
 function palindrome(str){
-	let s="";
-	while (str.includes(" ")) {
-	s=	str.replace(" ","");
-	}
+	let s=str;
+	
 
 let n=s.length;
 	s.toLowerCase();
